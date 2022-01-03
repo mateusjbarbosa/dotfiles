@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "git"
+cask "google-chrome"
+cask "notion"
+cask "visual-studio-code"
+cask "whatsapp"
