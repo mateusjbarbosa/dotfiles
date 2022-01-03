@@ -1,68 +1,81 @@
 {
-    "workbench.colorTheme": "CodeSandbox Black",
-    "workbench.editor.labelFormat": "short",
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-    
-    "editor.bracketPairColorization.enabled": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true
-    },
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 12,
-    "editor.fontWeight": "700",
-    "editor.inlineSuggest.enabled": true,
-    "editor.lineHeight": 20,
-    "editor.parameterHints.enabled": false,
-    "editor.renderLineHighlight": "gutter",
-    "editor.rulers": [80, 120],
-    "editor.semanticHighlighting.enabled": true,
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "terminal.integrated.fontSize": 12,
+  // Workbench
+  "workbench.colorTheme": "CodeSandbox Black",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
 
-    "breadcrumbs.enabled": true,
-    "explorer.compactFolders": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    "javascript.updateImportsOnFileMove.enabled": "never",
-    "typescript.updateImportsOnFileMove.enabled": "never",
-    
-    "emmet.syntaxProfiles": { "javascript": "jsx" },
-    "emmet.includeLanguages": { "javascript": "javascriptreact" },
-    
-    "diffEditor.ignoreTrimWhitespace": false,
-    "extensions.ignoreRecommendations": true,
-    "git.confirmSync": false,
-    "github.copilot.enable": {
-      "*": true,
-      "yaml": false,
-      "plaintext": true,
-      "markdown": false
-    },
-    "gitlens.defaultDateFormat": null,
-    "gitlens.hovers.currentLine.over": "line",
-    "material-icon-theme.files.associations": {
-      ".lintstagedrc.json": "tune",
-      "ormconfig.json": "database",
-      "tsconfig.json": "tune"
-    },
-    "material-icon-theme.folders.associations": {
-      "adapters": "connection",
-      "cryptography": "secure",
-      "domain": "core",
-      "entities": "class",
-      "factories": "container",
-      "globals": "global",
-      "infra": "app",
-      "main": "public",
-      "presentation": "connection",
-      "protocols": "resource",
-      "repositories": "mappings",
-      "subcomponents": "components",
-      "ui": "views",
-      "useCases": "components"
-    }
+  // Editor settings
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.fontWeight": "700",
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 20,
+  "editor.parameterHints.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.semanticHighlighting.enabled": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "terminal.integrated.fontSize": 12,
+
+  // VSCode stuff
+  "breadcrumbs.enabled": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  // Emmet
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  // Extensions
+  "diffEditor.ignoreTrimWhitespace": false,
+  "extensions.ignoreRecommendations": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false
+  },
+  "gitlens.defaultDateFormat": null,
+  "gitlens.hovers.currentLine.over": "line",
+  "material-icon-theme.files.associations": {
+    ".lintstagedrc.json": "tune",
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune"
+  },
+  "material-icon-theme.folders.associations": {
+    "adapters": "connection",
+    "cryptography": "secure",
+    "domain": "core",
+    "entities": "class",
+    "factories": "container",
+    "globals": "global",
+    "infra": "app",
+    "main": "public",
+    "presentation": "connection",
+    "protocols": "resource",
+    "repositories": "mappings",
+    "subcomponents": "components",
+    "ui": "views",
+    "useCases": "components"
   }
+}
