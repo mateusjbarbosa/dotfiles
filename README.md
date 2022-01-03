@@ -5,6 +5,11 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+### Clone this repo
+
+```shell
+git clone https://github.com/omariosouto/dotfiles.git ~/.dotfiles
+```
 ### Installing homebrew packages
 ```shell
 brew bundle --file ~/.dotfiles/Brewfile
@@ -30,7 +35,9 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ### Installing OhMyZSH Spaceship theme
 ```shell
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+```
 
+```shell
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 ```
 
@@ -38,9 +45,13 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 ```shell
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
+```shell
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+```
 
+```shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
@@ -70,7 +81,7 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 ## Adding development directory
 ```shell
-cd ~ && mkdir ./dev
+cd ~ && mkdir ./Developer
 ```
 
 ---
