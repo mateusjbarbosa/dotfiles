@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Mateus José Barbosa
+	email = 46843918+mateusjbarbosa@users.noreply.github.com
+[pull]
+	rebase = true
