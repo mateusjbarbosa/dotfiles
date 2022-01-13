@@ -2,7 +2,10 @@
 # Environment variables
 export NODE_ENV="development"
 export PATH="/usr/local/bin:${PATH}"
+
+# NVM
 export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
 
 # ZSH Variables
 export ZSH="$HOME/.oh-my-zsh"
