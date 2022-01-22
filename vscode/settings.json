@@ -5,7 +5,6 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
-
   // Editor settings
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
@@ -15,6 +14,8 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontWeight": "700",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 20,
   "editor.parameterHints.enabled": false,
@@ -27,7 +28,6 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "terminal.integrated.fontSize": 12,
-
   // VSCode stuff
   "breadcrumbs.enabled": true,
   "explorer.compactFolders": false,
@@ -35,7 +35,6 @@
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "never",
-
   // Emmet
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
@@ -43,7 +42,6 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
   // Extensions
   "diffEditor.ignoreTrimWhitespace": false,
   "extensions.ignoreRecommendations": true,
