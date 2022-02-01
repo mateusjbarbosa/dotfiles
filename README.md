@@ -8,7 +8,7 @@
 ### Clone this repo
 
 ```shell
-git clone https://github.com/omariosouto/dotfiles.git ~/.dotfiles
+git clone https://github.com/mateusjbarbosa/dotfiles.git ~/.dotfiles
 ```
 ### Installing homebrew packages
 ```shell
