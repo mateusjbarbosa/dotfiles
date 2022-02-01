@@ -1,6 +1,6 @@
 {
   // Workbench
-  "workbench.colorTheme": "CodeSandbox Black",
+  "workbench.colorTheme": "Omni",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
@@ -21,7 +21,6 @@
   "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [
-    80,
     120
   ],
   "editor.semanticHighlighting.enabled": true,
@@ -75,5 +74,6 @@
     "subcomponents": "components",
     "ui": "views",
     "useCases": "components"
-  }
+  },
+  "quokka.showOutputOnStart": false
 }
