@@ -8,16 +8,17 @@
   // Editor settings
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": true,
+    "source.organizeImports": true
   },
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.fontSize": 12,
-  "editor.fontWeight": "700",
+  "editor.fontWeight": "500",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.lineHeight": 20,
+  "editor.lineHeight": 18,
   "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [
