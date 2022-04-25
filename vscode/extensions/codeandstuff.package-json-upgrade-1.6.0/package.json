@@ -1,0 +1,161 @@
+{
+	"name": "package-json-upgrade",
+	"displayName": "Package Json Upgrade",
+	"description": "Shows available updates in package.json files. Offers quick fix command to update them and to show the changelog.",
+	"version": "1.6.0",
+	"publisher": "codeandstuff",
+	"license": "MIT",
+	"icon": "logo/icon.png",
+	"engines": {
+		"vscode": "^1.41.1"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"keywords": [
+		"npm",
+		"package.json",
+		"dependencies",
+		"upgrade",
+		"update"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pgsandstrom/package-json-upgrade.git"
+	},
+	"activationEvents": [
+		"onLanguage:json"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Package json upgrade",
+			"properties": {
+				"package-json-upgrade.showUpdatesAtStart": {
+					"type": "boolean",
+					"default": true,
+					"description": "Available updates will be shown directly when a package.json is opened. Otherwise, this must be toggled with a command."
+				},
+				"package-json-upgrade.skipNpmConfig": {
+					"type": "boolean",
+					"default": false,
+					"description": "Skip reading your npm configuration. Check this to skip using configuration such as proxies and caching that might be defined in your npm configuration. Try this out if the extension appears to not be working."
+				},
+				"package-json-upgrade.majorUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #FF0000) to override the color of major upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.minorUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #FFFF00) to override the color of minor upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.patchUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #00FF00) to override the color of patch upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.prereleaseUpgradeColorOverwrite": {
+					"type": "string",
+					"default": "",
+					"description": "Specify a color (like #00FF00) to override the color of prerelease upgrades. Leave empty for default color."
+				},
+				"package-json-upgrade.decorationString": {
+					"type": "string",
+					"default": "\t\tUpdate available: %s",
+					"description": "Customize update string. %s will be replaced by version, so 'Update: %s' will result in 'Update: 1.0.1'."
+				},
+				"package-json-upgrade.ignorePatterns": {
+					"type": "array",
+					"default": [],
+					"description": "A list of regex pattern of packages to not show decoration string for. To ignore all material-ui packages the JSON should be [\"^(?=@material-ui).+$\"]"
+				},
+				"package-json-upgrade.ignoreVersions": {
+					"type": "object",
+					"default": {},
+					"description": "Semver ranges of versions to ignore for specific packages. If you  want to ignore all @types/node versions 12 or greater the JSON should be {\"@types/node\": \">=12\"}. If you want to add several ignored semver ranges you can do {\"@types/node\": [\"=12.0.0\", \"=12.0.1\"]}."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "package-json-upgrade.toggle-show",
+				"title": "Toggle showing package.json available updates"
+			},
+			{
+				"command": "package-json-upgrade.update-all",
+				"title": "Update all dependencies in the current package.json file"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "webpack --mode production",
+		"compile": "tsc -p ./",
+		"webpack": "webpack --mode development",
+		"webpack-dev": "webpack --mode development --watch",
+		"test-compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js",
+		"format": "prettier --write \"src/**/*.{json,md,ts,tsx,css,scss}\"",
+		"lint": "node ./node_modules/eslint/bin/eslint.js --ext .ts --ext .tsx --fix src",
+		"package": "vsce package",
+		"pre-commit": "lint-staged",
+		"pre-push": "npm run lint && npm run typecheck && npm run test",
+		"typecheck": "tsc --noEmit",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"*.{json,md,css,scss}": [
+			"prettier --write"
+		],
+		"*.{ts,tsx}": [
+			"node ./node_modules/eslint/bin/eslint.js --fix",
+			"prettier --write"
+		]
+	},
+	"dependencies": {
+		"libnpmconfig": "1.2.1",
+		"node-fetch": "2.6.7",
+		"npm-registry-fetch": "12.0.0",
+		"semver": "7.3.5"
+	},
+	"devDependencies": {
+		"@types/glob": "7.2.0",
+		"@types/mocha": "9.1.0",
+		"@types/node": "14.18.9",
+		"@types/node-fetch": "2.6.1",
+		"@types/npm-registry-fetch": "8.0.4",
+		"@types/semver": "7.3.9",
+		"@types/vscode": "1.41.0",
+		"@typescript-eslint/eslint-plugin": "5.12.0",
+		"@typescript-eslint/parser": "5.12.0",
+		"cross-env": "7.0.3",
+		"eslint": "8.9.0",
+		"eslint-config-prettier": "8.3.0",
+		"glob": "7.2.0",
+		"husky": "7.0.4",
+		"lint-staged": "12.3.4",
+		"mocha": "9.2.0",
+		"prettier": "2.5.1",
+		"ts-loader": "9.2.6",
+		"typescript": "4.5.5",
+		"vsce": "2.6.7",
+		"vscode-test": "1.6.1",
+		"webpack": "5.69.0",
+		"webpack-cli": "4.9.2"
+	},
+	"__metadata": {
+		"id": "1f59cde6-3a8c-47e4-b40b-355c1641721a",
+		"publisherId": "31d03940-ac40-40ee-bd05-fefb4d01ab50",
+		"publisherDisplayName": "codeandstuff",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1650138832750
+	}
+}
