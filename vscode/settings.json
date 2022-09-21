@@ -1,6 +1,5 @@
 {
-  // Workbench
-  "workbench.colorTheme": "Omni",
+  "window.zoomLevel": 0,
   "workbench.editor.labelFormat": "short",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
@@ -9,20 +8,20 @@
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
+    // "source.fixAll": true,
     "source.organizeImports": true,
-    "source.sortMembers: true
   },
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontWeight": "500",
+  "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 18,
   "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [
-    120
+    100
   ],
   "editor.semanticHighlighting.enabled": true,
   "editor.tabSize": 2,
@@ -44,16 +43,12 @@
   },
   // Extensions
   "diffEditor.ignoreTrimWhitespace": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
   "extensions.ignoreRecommendations": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.inputValidationSubjectLength": 60,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": false
-  },
   "gitlens.defaultDateFormat": null,
   "gitlens.hovers.currentLine.over": "line",
   "material-icon-theme.files.associations": {
@@ -77,8 +72,29 @@
     "ui": "views",
     "useCases": "components"
   },
-  "remote.SSH.connectTimeout": 90,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "thunder-client.codeSnippetLanguage": "cs-httpclient",
+  "workbench.colorTheme": "Omni",
+  "tabnine.experimentalAutoImports": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.javascript.autoAttachFilter": "disabled",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 }

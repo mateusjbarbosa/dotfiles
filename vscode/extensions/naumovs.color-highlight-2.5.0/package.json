@@ -132,8 +132,12 @@
 	"__metadata": {
 		"id": "121396ad-85a1-45ec-9fd1-d95028a847f5",
 		"publisherId": "e9a76d04-24d4-44eb-a202-964f71acf59e",
-		"publisherDisplayName": "Sergii Naumov",
+		"publisherDisplayName": "Sergii N",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
 		"isPreReleaseVersion": false,
-		"installedTimestamp": 1641218751843
+		"preRelease": false,
+		"installedTimestamp": 1657820824422
 	}
 }
