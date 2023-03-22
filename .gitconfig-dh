@@ -1,0 +1,15 @@
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = main
+[user]
+	name = Mateus José Barbosa
+	email = mbarbosa@digitalhouse.com
+[pull]
+	rebase = true
+[alias]
+	s = !git status -s
+	c = commit -m
+	ca = commit --amend
+	cane = commit --amend --no-edit
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'

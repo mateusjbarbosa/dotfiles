@@ -2,12 +2,21 @@
 	editor = code --wait
 [init]
 	defaultBranch = main
-[user]
-	name = Mateus José Barbosa
-	email = mateus@findme.id
 [pull]
 	rebase = true
 [alias]
 	s = !git status -s
-	c = !git add --all && git commit -m
+	c = commit -m
+	ca = commit --amend
+	cane = commit --amend --no-edit
 	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+[includeIf "gitdir/i:~/Developer/digital-house/"]
+	path = .gitconfig-dh
+[includeIf "gitdir/i:~/Developer/findme/"]
+	path = .gitconfig-findme
+[includeIf "gitdir/i:~/Developer/findme-tmp/"]
+	path = .gitconfig-findme
+[includeIf "gitdir/i:~/Developer/learning/"]
+	path = .gitconfig-personal
+[includeIf "gitdir/i:~/Developer/saas/"]
+	path = .gitconfig-personal

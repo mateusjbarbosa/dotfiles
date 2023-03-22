@@ -1,5 +1,8 @@
 {
+  // Window
   "window.zoomLevel": 0,
+  // Workbench
+  "workbench.colorTheme": "Min Dark",
   "workbench.editor.labelFormat": "short",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
@@ -9,9 +12,9 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     // "source.fixAll": true,
-    "source.organizeImports": true,
+    "source.organizeImports": true
   },
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "FiraCodeNerdFontComplete-Retina",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontWeight": "500",
@@ -20,13 +23,17 @@
   "editor.lineHeight": 18,
   "editor.parameterHints.enabled": false,
   "editor.renderLineHighlight": "gutter",
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "editor.semanticHighlighting.enabled": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
+  // Terminal settings
   "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "FiraCodeNerdFontComplete-Retina",
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeightBold": "600",
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.integrated.lineHeight": 1.25,
   // VSCode stuff
   "breadcrumbs.enabled": true,
   "explorer.compactFolders": false,
@@ -35,12 +42,6 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "never",
   // Emmet
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
   // Extensions
   "diffEditor.ignoreTrimWhitespace": false,
   "eslint.alwaysShowStatus": true,
@@ -72,29 +73,6 @@
     "ui": "views",
     "useCases": "components"
   },
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "thunder-client.codeSnippetLanguage": "cs-httpclient",
-  "workbench.colorTheme": "Omni",
   "tabnine.experimentalAutoImports": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "debug.javascript.autoAttachFilter": "disabled",
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // Languages
 }
